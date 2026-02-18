@@ -1,0 +1,10 @@
+ul{
+    list-style: none;
+} 
+ 
+
+.btncolor{
+    background: linear-gradient(90deg, #a6d1c2, #258491);
+    border-color: light;
+    border-radius: 10px;
+}
