@@ -1,0 +1,31 @@
+.slider-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 40px;              /* 👈 YAHAN GAP ADD HUA */
+  animation: scrollLeft 20s linear infinite;
+}
+
+.slider-track img {
+  width: 300px;
+  height: 600px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+/* 5 images × (300 width + 20 gap) = 1600px total move */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1600px);
+  }
+}
